@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClubDog - Hotel, Creche e Bem-Estar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {font-family: 'Nunito', sans-serif;}
+    body {background-color:#fff; color:black;}
+    /* Ajuste para navbar fixa não cobrir header */
+    header {background-color:#D9EBFE; color:black; padding:120px 20px 40px; text-align:center;}
+    header h1 {color:#D9EBFE; font-weight:700;}
+    header p {margin:5px 0;}
+    .btn-whats {
+      background:#25D366; color:#fff; border-radius:30px; padding:10px 25px; 
+      display:inline-block; text-decoration:none; font-weight:600; transition:.3s;
+    }
+    .btn-whats:hover {background:#1ebd59; color:#fff;}
+    section {padding:60px 15px;}
+    section h2 {text-align:center; font-weight:700; margin-bottom:40px;}
+    .highlight {color:#D9EBFE;}
+    footer {background:#042656; color:#fff; padding:30px; text-align:center;}
+    /* Efeito fade-in */
+    .fade-in {opacity:0; transform:translateY(30px); transition:opacity .6s ease, transform .6s ease;}
+    .fade-in.show {opacity:1; transform:translateY(0);}
+   contato {background-color: #D9EBFE;}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar fixa -->
+  <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.jpg" alt="Logo ClubDog" height="80">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Tour Virtual</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hotelaria">Hotelaria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#acomodacoes">Acomodações</a>
+          </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Mais Cuidados
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#aquatico">Parque Aquatico</a></li>
+            <li><a class="dropdown-item" href="#banhotosa">Banho e Tosa</a></li>
+            
+            <li><a class="dropdown-item" href="#saude">Saúde e Bem-Estar</a></li>
+          </ul>
+        </li>
+          <li class="nav-item">
+            <a class="btn btn-success ms-3" href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>CLUBDOG</h1>
+    <p  style="font-weight: bolder; color: #042656;">HOTEL – CRECHE – BANHO – FISIOTERAPIA | <span style="font-weight: bold; color: red;">100% Livres</span></p>
+    <p><i class="fa-brands fa-whatsapp"></i>(11) 96809-6792</p>
+    <p>Taxi Dog GRÁTIS para: Jardim Paulista, Vila Olímpia, Itaim Bibi, Vila Nova Conceição, Moema, Brooklin...</p>
+    <a href="#" class="btn-whats"> <i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+  </header>
+
+  <!-- Seção Experiência -->
+  <section id="tourvirtual" class="container fade-in">
+    <h2>16 ANOS DE EXPERIÊNCIA</h2>
+    <div class="text-center">
+      <p>FAÇA UM TOUR VIRTUAL NAS DEPENDÊNCIAS DO CLUBDOG</p>
+      <a href="#" class="btn-tour mt-3"> <i class="fa-solid fa-street-view"></i> Tour Virtual</a>
+    </div>
+    <div class="col-md-12">
+        <img src="./img/cachorro piscina.jpg" class="img-fluid rounded" alt="Hotelaria Premium">
+      </div>
+  </section>
+
+  <!-- Seção Bem-Estar -->
+ <section id="hotelaria" class="container fade-in">
+    <h2>A Segunda Casa do Seu Melhor Amigo</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6"> <!-- Coluna do texto à esquerda -->
+            <p>No CLUBDOG, bem-estar Premium para Seu Pet, oferecemos mais do que serviços, proporcionamos uma experiência completa de bem-estar para o seu cão.
+            Com atendimento Vip aos bairros mais nobres de São Paulo. Garantimos conveniência, qualidade e consciência ambiental para tutores exigentes.
+            </p>
+            <div>
+                <a href="#" class="btn-whats"> <i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="col-md-6"> <!-- Coluna da imagem à direita -->
+            <img src="./img/vista de cima 2.jpg" class="img-fluid rounded" alt="A Segunda Casa do Seu Melhor Amigo">
+        </div>
+    </div>
+</section>
+
+  <!-- Seção Hotelaria -->
+  <section id="hotelaria" class="container fade-in">
+    <h2>Hotelaria Premium</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3">
+        <img src="./img/vista de cima 1.png" class="img-fluid rounded" alt="Hotelaria Premium">
+      </div>
+      <div class="col-md-6">
+        <p>Hospedagem com estrutura completa, segura e divertida. Mais de 60 câmeras de vigilância, supervisão 24h.</p>
+        <p>Prédios dos alojamentos personalizados por porte.</p>
+        <a href="#" class="btn-whats"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Acomodações -->
+  <section id="acomodacoes" class="container fade-in">
+  <h2 class="text-center mb-4">Acomodações</h2>
+  <div class="row">
+    <!-- Carrossel Pequeno Porte -->
+    <div class="col-md-6">
+      <h4 class="text-center">Acomodações para cães de pequeno porte</h4>
+      <div id="carouselPequeno" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/acom pp1.jpg" class="d-block w-100 rounded" alt="Pequeno Porte 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/acom pp2.jpg" class="d-block w-100 rounded" alt="Pequeno Porte 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/acom pp3.jpg" class="d-block w-100 rounded" alt="Pequeno Porte 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPequeno" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPequeno" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Carrossel Médio e Grande Porte -->
+    <div class="col-md-6">
+      <h4 class="text-center">Acomodações para cães de médio e grande porte</h4>
+      <div id="carouselGrande" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/acom  MG 1.jpg" class="d-block w-100 rounded" alt="Médio e Grande Porte 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/acom  MG 2.jpg" class="d-block w-100 rounded" alt="Médio e Grande Porte 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/acom  MG 3.jpg" class="d-block w-100 rounded" alt="Médio e Grande Porte 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGrande" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselGrande" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-whatsapp">WhatsApp</a>
+  </div>
+</section>
+
+
+  <!-- Seção Parque Aquático -->
+  <section id="aquatico" class="container fade-in my-5">
+  <h2 class="text-center mb-5">Parque Aquático Canino</h2>
+
+  <div class="row g-4">
+    <!-- Piscininha exclusiva -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-center">Piscininha exclusiva para cães pequenos</h5>
+          <div id="carouselPiscininha" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/piscina pp1.jpg" class="d-block w-100 rounded" alt="Piscininha 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp2.jpg" class="d-block w-100 rounded" alt="Piscininha 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPiscininha" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPiscininha" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Piscina GG com escorregador -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-center">Piscina para cães GG com escorregador</h5>
+          <div id="carouselPiscinaGG" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/piscina pp3.jpg" class="d-block w-100 rounded" alt="Piscina GG 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp2.jpg" class="d-block w-100 rounded" alt="Piscina GG 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Piscina GG 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPiscinaGG" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPiscinaGG" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fonte Maluca -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-center">Divertida Fonte Maluca</h5>
+          <div id="carouselFonteMaluca" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/piscina pp1.jpg" class="d-block w-100 rounded" alt="Fonte Maluca 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp1.jpg" class="d-block w-100 rounded" alt="Fonte Maluca 2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFonteMaluca" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFonteMaluca" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gramados Naturais -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-center">Gramados naturais e áreas cobertas</h5>
+          <div id="carouselGramados" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Gramados 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Gramados 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Gramados 3">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Gramados 4">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Gramados 5">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/piscina pp4.jpg" class="d-block w-100 rounded" alt="Gramados 6">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGramados" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGramados" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-whatsapp btn-lg"> <i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+  </div>
+</section>
+
+
+  <!-- Seção Banho e Tosa -->
+  <section id="banhotosa" class="container fade-in">
+    <h2>Banho e Tosa • Transporte • Rotina Equilibrada</h2>
+    <ul>
+      <li>Atividades físicas e mentais</li>
+      <li>Momentos de relaxamento</li>
+      <li>Alimentação personalizada</li>
+      <li>Administração de medicamento</li>
+      <li>Veterinário disponível para suporte</li>
+      <li>Atualizações com fotos e vídeos</li>
+    </ul>
+    <a href="#" class="btn-whats mt-3"> <i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+  </section>
+
+  <!-- Seção Saúde -->
+<section id="saude" class="container fade-in my-5">
+  <h2 class="text-center mb-4">Saúde e Bem-Estar com Fisioterapia e Veterinária Integrada</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <p class="text-center">
+        No CLUBDOG o cuidado com seu pet vai muito além do conforto:<br>
+        Oferecemos um centro de bem-estar completo, com serviços veterinários integrados e especialidade em fisioterapia animal.
+      </p>
+      <ul>
+        <li>Estão em recuperação de cirurgias ou lesões</li>
+        <li>Possuem mobilidade reduzida ou dores articulares</li>
+        <li>Sofrem de doenças como artrose, displasia ou hérnia de disco</li>
+        <li>Têm sobrepeso e precisam de condicionamento físico leve</li>
+        <li>Pertencem a raças com tendência a problemas ortopédicos</li>
+      </ul>
+      <p class="text-center mt-3">
+        Unidade com fácil acesso no caminho das praias com estrutura de alto padrão.
+      </p>
+    </div>
+  </div>
+
+  <!-- Cards com imagens -->
+  <div class="row text-center mt-4 g-4">
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="./img/fisio1.jpg" class="card-img-top rounded" alt="Fisioterapia 1">
+        <div class="card-body">
+          <p class="card-text">Legenda ou descrição da imagem 1.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="./img/fisio2.jpg" class="card-img-top rounded" alt="Fisioterapia 2">
+        <div class="card-body">
+          <p class="card-text">Legenda ou descrição da imagem 2.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="./img/fisio3.jpg" class="card-img-top rounded" alt="Fisioterapia 3">
+        <div class="card-body">
+          <p class="card-text">Legenda ou descrição da imagem 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão WhatsApp -->
+  <div class="text-center mt-4">
+    <a href="#" class="btn btn-whatsapp btn-lg"> <i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+  </div>
+</section>
+
+
+  <!-- Seção Depoimentos -->
+    <section id="depoimentos" class="container my-5">
+  <h2 class="text-center mb-5">Depoimentos de Clientes</h2>
+
+  <div class="row g-4">
+    <!-- Depoimento 1 -->
+    <div class="col-md-6">
+      <div class="card shadow-sm p-3">
+        <div class="d-flex align-items-center mb-2">
+          <img src="./img/user1.jpg" alt="Carlos" class="rounded-circle me-2" width="50" height="50">
+          <div>
+            <strong>— Carlos M., Moema</strong> <br>
+           
+          </div>
+          
+        </div>
+        <div class="mb-2">
+          <span class="text-warning">★★★★★</span>
+        </div>
+        <p>“Profissionais atenciosos e estrutura impecável. Confio plenamente nos cuidados que oferecem ao meu pet.”</p>
+      </div>
+    </div>
+
+    <!-- Depoimento 2 -->
+    <div class="col-md-6">
+      <div class="card shadow-sm p-3">
+        <div class="d-flex align-items-center mb-2">
+          <img src="./img/user2.jpg" alt="Mariana" class="rounded-circle me-2" width="50" height="50">
+          <div>
+            <strong>Mariana S., Jardim Paulista</strong> <br>
+                      </div>
+        
+        </div>
+        <div class="mb-2">
+          <span class="text-warning">★★★★★</span>
+        </div>
+        <p>“O CLUBDOG transformou a rotina do meu cãozinho. Ele adora o daycare e sempre volta feliz!”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+  </section>
+  <section id="contato" class="container fade-in text-center" style="background-color: #D9EBFE;">
+    <h1 >Siga nossas redes sociais:</h1>
+    <a href="#" class="btn btn-instagram btn-lg"> <i class="fa-brands fa-instagram"></i>Instagram</a>
+    <a href="#" class="btn btn-facebook btn-lg"> <i class="fa-brands fa-facebook"></i>Facebook</a>
+    <a href="#" class="btn-whats mt-2"><i class="fa-brands fa-whatsapp"></i>Entre em contato</a>
+  </section>
+
+  <footer>
+    <p>© 2025 ClubDog - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS para animação fade-in ao rolar -->
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {threshold: 0.2};
+    const appearOnScroll = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting){return;}
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+    faders.forEach(fader => {appearOnScroll.observe(fader);});
+  </script>
+</body>
+</html>
